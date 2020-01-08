@@ -2,6 +2,14 @@
     display: flex;
     flex-wrap: wrap;
     align-content: center;
-    width: 70%;
+    justify-content: center;
+    width: 90%;
     margin: 0 auto;
-}
+   }
+@media screen and (max-width: 480px) {
+    .Main-wrapper{
+        
+        width: 80%;
+       
+       }
+  }
