@@ -2,20 +2,21 @@
 .user-container{
     
     width: 100%;
-    margin:10px;
+    margin:5px;
     cursor: pointer;
     background-color: white;
     display: flex;
     border-radius: 25px;
     transition: 0.3s;
+    animation: slide_up 1s;
    
 }
 .user-container:hover{
     box-shadow: 0 10px 10px #c9c9c9;
 }
 .image-wrapper{
-    width: 100px;
-    padding: 30px;
+    width: 70px;
+    padding: 10px;
 
 }
 .imageHolder{
@@ -37,11 +38,21 @@
     width: 100%;
 }
 .name{
-    font-size: 30px;
+    font-size: 25px;
     font-weight: bolder;
 }
 .city{
     font-weight: 200;
     font-style: italic;
     color: gray;
+}
+
+@keyframes slide_up{
+    from{
+        margin-top: 20px;
+
+    }
+    to{
+        margin-top: 5px;
+    }
 }

@@ -1,38 +1,57 @@
 .user-detail-wrapper-container{
    position: fixed;
-   width: 80%;
+   width: 50%;
    z-index: 2;
-   top:20%;
-   background-color: white;
+   top:30%;
+    background-color: white;
    box-shadow: 0 0 5px #dbdbdb;
-
+    animation:pop_up 0.5s;
 
    
    
+   
+}
+.imageHolder-user-detail{
+    width: 100%;
+    border-radius: 50%;
+
    
 }
 
 .user-detail-wrapper{
     display: flex;
    flex-wrap: wrap;
-   justify-content: center;
-   align-content: center;
+   padding: 20px;
+ 
+  
 }
 
 .close{
     height: 20px;
     cursor: pointer;
-    position: fixed;
+    position: absolute;
+    right: 0;
+    width: 30px;
+    
 }
 .user-profile-image-wrapper{
-    width: 150px;
+    width: 200px;
 }
 .user-profile-detail-wrapper{
    
-    width: 100%;
-    background-color: white;
-    text-align: center;
+   margin: 0 auto;
+    
 }
+table{
+   width: 50%; 
+}
+th{
+    text-align: left;
+}
+td{
+    line-height: 20px;
+}
+
 @media screen and (max-width :480px){
     .user-detail-wrapper-container{
         top:0;
@@ -49,5 +68,13 @@
         
      } 
    
+}
+@keyframes pop_up{
+    from{
+        top:0;
+    }to{
+        top:30%;
+      
+    }
 }
 

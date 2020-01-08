@@ -8,7 +8,7 @@ function List(props){
                 <img src={props.data.profileImage} className="imageHolder" alt={props.data.name}></img>
             </div>
             <div className="user-detail-container">
-                <span className="name">{props.data.firstName}</span>
+    <span className="name">{props.data.firstName} {props.data.lastName}</span>
                 <span className="city">From "{props.data.address.city}"</span>
                 
             </div>
