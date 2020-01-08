@@ -2,6 +2,7 @@ import React from 'react';
 import List from './List';
 import './Main.css';
 import UserDetail from './UserDetail';
+import Loading from './LoadingScreen';
 
 class Main extends React.Component{
     constructor(){
@@ -58,6 +59,10 @@ class Main extends React.Component{
                 )
                    
                })
+        }else{
+            return(
+                <Loading/>
+            )
         }
         
         
